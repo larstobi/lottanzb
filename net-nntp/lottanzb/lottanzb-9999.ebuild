@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE="remote"
 
-DEPEND="dev-lang/python
+DEPEND=">=dev-lang/python-2.4
 	dev-python/pygtk"
 RDEPEND="${DEPEND}
 	!remote? ( net-nntp/hellanzb )"
