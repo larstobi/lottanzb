@@ -1,0 +1,18 @@
+--- setup.py.orig	2008-06-27 14:42:13.587391220 +0200
++++ setup.py	2008-06-27 14:43:38.383140690 +0200
+@@ -71,14 +71,7 @@
+                 call(cmd)
+             except:
+                 self.warn("Could not call %s." % cmd)
+-        
+-        do(["update-mime-database", join(self.prefix, "share", "mime")], "Updating MIME types...")
+-        do(["update-desktop-database"], "Updating desktop database...")
+-        
+-        for loc in ["gnome", "hicolor"]:
+-            do(["gtk-update-icon-cache", "-q", "-f", "-t", join(self.prefix, "share", "icons", loc)], "Updating icon caches...")
+-        
+-        do(["scrollkeeper-update", "-q", "-o", join(self.prefix, "share", "omf")], "Update scrollkeeper database...")
++		print foo
+ 
+ INSTALLED_FILES = "INSTALLED_FILES"
+ 

@@ -2,10 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit distutils bzr
+inherit eutils distutils gnome2 bzr
 
 DESCRIPTION="LottaNZB is a pyGTK front-end for HellaNZB"
 HOMEPAGE="http://lottanzb.org"
+SRC_URI=""
 
 EBZR_BRANCH="main"
 EBZR_REPO_URI="http://bazaar.launchpad.net/~lottanzb/lottanzb/"
@@ -20,3 +21,27 @@ DEPEND=">=dev-lang/python-2.4
 RDEPEND="${DEPEND}
 	!remote? ( net-nntp/hellanzb )"
 
+src_unpack() {
+	bzr_src_unpack
+	cd "${S}"
+	epatch "${FILESDIR}/${P}-respect-sandbox-damnit.patch"
+}
+
+# let's call distutils explicitly, as we also inherit gnome2
+src_compile() {
+	distutils_src_compile
+}
+
+src_install() {
+	distutils_src_install
+}
+
+pkg_postinst() {
+	distutils_pkg_postinst
+	gnome2_pkg_postinst
+}
+
+pkg_postrm() {
+	distutils_pkg_postrm
+	gnome2_pkg_postrm
+}
