@@ -1,0 +1,8 @@
+# ChangeLog for net-nntp/lottanzb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  09 Jul 2008; Thomas Kuther <gimpel@sonnenkinder.org>
+  +lottanzb-0.3.1.ebuild:
+  - add changelog - version bump 0.3.1 - remove xdg commands from setup.py
+
