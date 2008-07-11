@@ -17,7 +17,8 @@ KEYWORDS=""
 IUSE="remote"
 
 DEPEND=">=dev-lang/python-2.4
-	dev-python/pygtk"
+	dev-python/pygtk
+	dev-python/elementtree"
 RDEPEND="${DEPEND}
 	!remote? ( net-nntp/hellanzb )"
 
