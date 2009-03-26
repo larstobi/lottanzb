@@ -10,7 +10,7 @@ SRC_URI="http://lottanzb.org/releases/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86 arm ia64 ppc ppc64"
 IUSE="remote"
 
 DEPEND=">=dev-lang/python-2.4
