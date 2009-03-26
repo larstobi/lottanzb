@@ -22,7 +22,6 @@ RDEPEND="${DEPEND}
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
-	epatch "${FILESDIR}/${PN}-9999-respect-sandbox-damnit.patch"
 }
 
 # let's call distutils explicitly, as we also inherit gnome2
