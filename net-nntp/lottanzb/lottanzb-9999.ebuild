@@ -34,7 +34,7 @@ src_compile() {
 }
 
 src_install() {
-	distutils_src_install
+	distutils_src_install --packaging-mode
 }
 
 pkg_postinst() {
