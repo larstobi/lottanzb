@@ -20,12 +20,6 @@ DEPEND=">=dev-lang/python-2.4
 RDEPEND="${DEPEND}
 	!remote? ( net-nntp/hellanzb )"
 
-src_unpack() {
-	unpack ${A}
-	cd "${S}"
-}
-
-# let's call distutils explicitly, as we also inherit gnome2
 src_compile() {
 	distutils_src_compile
 }
