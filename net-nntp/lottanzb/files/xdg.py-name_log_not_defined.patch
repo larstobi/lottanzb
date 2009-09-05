@@ -1,0 +1,11 @@
+--- lottanzb-0.4.96/lottanzb/resources/xdg.py	2009-09-05 16:47:42.505254526 +0200
++++ lottanzb-0.4.96/lottanzb/resources/xdg.py	2009-09-05 16:48:05.420498489 +0200
+@@ -27,6 +27,8 @@
+ """
+ 
+ import re
++import logging
++log = logging.getLogger(__name__)
+ 
+ from os import environ
+ from os.path import join, exists, expandvars, expanduser
