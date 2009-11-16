@@ -15,9 +15,9 @@ IUSE="remote"
 
 DEPEND=">=dev-lang/python-2.4
 	dev-python/pygtk
-	dev-python/kiwi
 	dev-python/elementtree"
 RDEPEND="${DEPEND}
+	dev-python/kiwi
 	!remote? ( net-nntp/hellanzb )"
 
 src_compile() {
