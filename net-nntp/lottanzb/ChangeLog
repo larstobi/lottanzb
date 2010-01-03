@@ -3,6 +3,7 @@
 03 Jan 2010; Lars Tobias Børsting <larstobi@snota.no>
   lottanzb-0.5.2.ebuild:
   - Added dev-python/kiwi to RDEPEND
+  - Removed lottanzb-0.4.1.ebuild
 
 05 Sep 2009; Lars Tobias Børsting <larstobi@snota.no>
   +lottanzb-0.5_beta.ebuild:
