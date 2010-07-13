@@ -6,7 +6,8 @@ inherit eutils distutils gnome2
 
 DESCRIPTION="LottaNZB is a pyGTK front-end for HellaNZB"
 HOMEPAGE="http://lottanzb.org"
-SRC_URI="http://launchpad.net/lottanzb/${PV}/${PV}/+download/${P}.tar.gz"
+MY_BRANCH="${PV/5\.?/5}"
+SRC_URI="http://launchpad.net/lottanzb/${MY_BRANCH}/${PV}/+download/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
